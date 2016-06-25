@@ -6,13 +6,18 @@
       <!-- Stylesheets -->
       <link rel="stylesheet" href="css/reset.css"> <!-- Resets browser styles -->
       <link rel="stylesheet" href="css/global.css"> <!-- Your stylesheet -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" /> <!--Triggers responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" /> <!--Triggers responsive and gives the browser instructions on how to control the page's dimensions and scaling. -->
+      <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'> <!-- Rye font -->
+</head>
+
+<!-- PUT IN FAVICON -->
   </head>
   <body>
-    <header id="masthead"> <!-- Start Header area -->
-      <nav> <!-- Main navigation -->
-        <div class="container">
-          <h1 id="brand">Esther</h1>
+    <header id="masthead">
+<!-- Main navigation -->
+      <nav>
+        <div class="container"> <!-- This container helps remedy how left edge of navs are on left edge of browser by giving you option to style the width -->
+          <h1 id="brand">estroid</h1> <!-- H1 with text replacement will still work if images are turned off, making it accesible to screen readers. -->
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
@@ -22,17 +27,20 @@
       </nav>
     </header>
 
-    <!-- <section> are similar to prior use of the div, but div has no semantic meaning -->
-    <section id="persistence-photo"> <!-- Full bleed image -->
-      <img src="images/persistence.png" alt="grass">
-      <h2>estroid</h2>
-      <span class="city">Techie Gal</span>
+<!-- Hero image section -->
+    <section id="hero">
+      <img src="images/BreakfastingwithMichael.png" alt="Esther photo">
+      <h2>Red Accordions</h2>
+      <span class="who">Web developer and writer.</span>
+      <h5 class="caption">Photography by Michael Marcinek</h5>
     </section>
 
-    <section id="main-content"> <!-- Main body content -->
+<!-- Main body content -->
+    <section id="main-content">
       <div class="container">
         <h3>I'm a web developer.</h3>
-        <!-- About section -->
+
+<!-- About section -->
         <section class="column" id="about">
           <img src="images/Converse.png" alt="converse shoes">
           <h4>About</h4>
@@ -40,7 +48,7 @@
           <a href="" class="btn">More</a>
         </section>
 
-        <!-- Work section -->
+<!-- Work section -->
         <section class="column" id="work">
           <img src="images/LaptopandTea.png" alt="laptop">
           <h4>Work</h4>
@@ -48,7 +56,7 @@
           <a href="" class="btn">Samples</a>
         </section>
 
-        <!-- Contact section -->
+<!-- Contact section -->
         <section class="column" id="contact">
           <img src="images/PhoneBooth.png" alt="phone booth">
           <h4>Contact</h4>
@@ -58,7 +66,7 @@
       </div>
     </section>
 
-    <!-- social media -->
+<!-- social media -->
     <section id="social">
       <div class="container">
         <h3>I'm pretty social too. We should be friends.</h3>
