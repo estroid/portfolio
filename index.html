@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Esther aka estroid</title>
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="css/reset.css"> <!-- Resets browser styles -->
+      <link rel="stylesheet" href="css/global.css"> <!-- Your stylesheet -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" /> <!--Triggers responsive -->
+  </head>
+  <body>
+    <header id="masthead"> <!-- Start Header area -->
+      <nav> <!-- Main navigation -->
+        <div class="container">
+          <h1 id="brand">Esther</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
 
-</body>
+    <!-- <section> are similar to prior use of the div, but div has no semantic meaning -->
+    <section id="persistence-photo"> <!-- Full bleed image -->
+      <img src="images/persistence.png" alt="grass">
+      <h2>estroid</h2>
+      <span class="city">Techie Gal</span>
+    </section>
+
+    <section id="main-content"> <!-- Main body content -->
+      <div class="container">
+        <h3>I'm a web developer.</h3>
+        <!-- About section -->
+        <section class="column" id="about">
+          <img src="images/Converse.png" alt="converse shoes">
+          <h4>About</h4>
+          <p>Hi, I'm Esther (aka estroid), a front end web developer in Atlanta. I have 13+ years of experience as a writer, artist, and teacher in higher education. I’m excited about building websites and applications that are beautiful, actionable resources for people.</p>
+          <a href="" class="btn">More</a>
+        </section>
+
+        <!-- Work section -->
+        <section class="column" id="work">
+          <img src="images/LaptopandTea.png" alt="laptop">
+          <h4>Work</h4>
+          <p>XXXX</p>
+          <a href="" class="btn">Samples</a>
+        </section>
+
+        <!-- Contact section -->
+        <section class="column" id="contact">
+          <img src="images/PhoneBooth.png" alt="phone booth">
+          <h4>Contact</h4>
+          <p></p>
+          <a href="" class="btn">I'd love to hear from you</a>
+        </section>
+      </div>
+    </section>
+
+    <!-- social media -->
+    <section id="social">
+      <div class="container">
+        <h3>I'm pretty social too. We should be friends.</h3>
+        <ul>
+          <li><img src="images/twitter.png" alt="Twitter"></li>
+          <li><img src="images/linked_in_white.png" alt="LinkedIn"></li>
+          <li><img src="images/medium.png" alt="Medium"></li>
+          <li><img src="images/github.png" alt="Medium"></li>
+          <!-- <li><img src="" alt="Pinterest"></li>
+          <li><img src="" alt="Yelp"></li> -->
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2016 Esther Lee</p>
+    </footer>
+  </body>
 </html>
+
+<!-- <aside></aside> --> <!-- Tangentially related content, E.g. sidebar, pull quotes -->
+<!-- <article></article> --> <!-- Self-contained related content, E.g. blog posts, news stories, comments, reviews, forum posts -->
+
+
