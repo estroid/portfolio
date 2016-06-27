@@ -1,17 +1,33 @@
 
 /* To ensure body is visible below fixed navigation */
+
 body {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
   padding-top: 70px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  line-height: 20px; /* specifies minimum height of line boxes within the element */
+}
+
+.caption {
+  /*font-size: 2em;
+*/}
 
 nav {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(250, 250, 250, 0.8);
-  border-bottom: 2px solid #ccc;
-  height: 75px;
+  background: rgba(250, 250, 250, 1.0);
+  /*border-bottom: 2px solid #ccc;*/
+  height: 70px;
   width: 100%;
+  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06),0 4px 5px 0 rgba(0,0,0,0.06),0 1px 10px 0 rgba(0,0,0,0.08);
 }
 
 nav ul {
@@ -31,6 +47,7 @@ nav li a {
   display: block;
   text-decoration: none;
   color: #000000;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Nav links in hover state */
@@ -74,25 +91,27 @@ nav li a:hover {
   border: 3px solid #fafafa;
 }
 
-/* estroid text */
+/* Red Accordions text */
 #hero h2 {
-    font-size: 400%;
-    margin: 10px;
+  font-size: 400%;
+  margin: 10px;
+  font-family: 'BioRhyme', serif;
+  font-weight: 400;
 }
 
 /* border for hero span */
 #hero span {
-    border: 2px solid white;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 150%;
+  border: 2px solid white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 150%;
 }
 
 #main-content{
-    text-align: center;
-    padding: 25px 0;
-    overflow: hidden; /* overflow property controls what happens to content that breaks outside of its bounds */
+  text-align: center;
+  padding: 25px 0;
+  overflow: hidden; /* overflow property controls what happens to content that breaks outside of its bounds */
 }
 
 /*#main-content h3{
@@ -102,69 +121,83 @@ nav li a:hover {
 
 
 .column {
-    float: left; /* displays 3 columns next to each other */
-    width: 30%;
-    padding: 15px;
+  float: left; /* displays 3 columns next to each other */
+  width: 30%;
+  padding: 15px;
 }
 
 /* sizes and styles the images in each column b/c images didn't scale with the columns, because they ignore constraints like div width*/
 .column img {
-    width: 70%;
-    max-width:70%;
-    /*border-radius: 50%;*/
-    border: 5px solid #F2B71D;
-    margin-bottom: 20px;
+  width: 70%;
+  max-width:70%;
+  /*border-radius: 50%;*/
+  border: 5px solid #F2B71D;
+  margin-bottom: 20px;
 }
 
-/*.column h4 {
-    color: #8a80c3;
-    font-size: 150%;
-    margin-bottom: 15px;
+/* h4 headings like about, work, and contact */
+.column h4 {
+  color: #8a80c3;
+  font-size: 150%;
+  margin-bottom: 15px;
 }
+
+ /* column buttons 8 */
 .column .btn {
-   border: 2px solid #8a80c3;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 150%;
-    text-decoration: none;
-    color: #8a80c3;
+  border: 2px solid #8a80c3;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 150%;
+  text-decoration: none;
+  color: #8a80c3;
 }
 
+/* Social media background, padding, and accounting for the floated list items. */
+
+/* social area background */
 #social {
-    background: #8a80c3;
-    color: #fafafa;
-    padding: 25px 0;
-    overflow: hidden;
-    text-align: center;
-    float: left;
-    width: 100%;
-    position: relative;
+  background: #F2B71D;
+  color: red; /* headline text color above social media icons */
+  padding: 25px 0;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  width: 100%;
+  position: relative;
 }
+
+/* styling for social icons */
 #social ul {
-    clear:left;
-    float:left;
-    list-style:none;
-    margin:0;
-    padding:0;
-    position:relative;
-    left:50%;
-    text-align:center;
+  clear:left;
+  float:left;
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  left:50%;
+  text-align:center;
 }
+
 #social li {
   display:block;
-    float:left;
-    list-style:none;
-    margin:0;
-    padding:0;
-    position:relative;
-    right:50%;
+  float:left;
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  right:50%;
 }
+
+/* margins between social media icons */
 #social ul li img
 {
-    margin: 20px;
+  margin: 20px;
 }
-footer
+
+/* XXXXXXX
+
+/*footer
 {
     width: 100%;
     text-align: center;
